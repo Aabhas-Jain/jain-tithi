@@ -9,35 +9,39 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background: #f4f4f4;
       font-family: Arial, sans-serif;
+      background: #f4f4f4;
     }
     .container {
-      max-width: 500px;
-      margin: 0 auto;
-      background: #fff;
-      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
       padding: 20px;
       box-sizing: border-box;
+      background: #fff;
     }
     h1 {
-      margin-top: 0;
+      margin: 0;
       color: #333;
       text-align: center;
     }
     p {
       color: #666;
       text-align: center;
-      margin: 1rem 0;
+      margin: 10px 0 20px;
     }
     .btn {
       display: block;
       text-decoration: none;
       background: #4285F4;
       color: #fff;
-      padding: 0.75rem;
+      padding: 15px 20px;
       border-radius: 4px;
-      margin: 0.5rem 0;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 300px;
       text-align: center;
       transition: background 0.3s ease;
     }
@@ -48,20 +52,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>Jain Tithi Calendar</h1>
-    <p>Subscribe to our calendar for timely notifications on Ashtami &amp; Chaturdashi events.</p>
-    
-    <a class="btn" href="https://calendar.google.com/calendar/u/9?cid=ZWExZjA3MDNjOTQ1OTRkM2RkZjRhMTE4ZmFhZjY0MmFkZjQwYjY3MGIzZjQyZTVlNTdkYzhiMDlhNzE1NjJjOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">
-      Add on Android's Google Calendar
-    </a>
-    
-    <a class="btn" href="webcal://calendar.google.com/calendar/ical/ea1f0703c94594d3ddf4a118faaf642adf40b670b3f42e5e57dc8b09a71562c8@group.calendar.google.com/public/basic.ics">
-      Add on iPhone's Calendar
-    </a>
-    
-    <a class="btn" href="https://calendar.google.com/calendar/u/0/r?cid=ea1f0703c94594d3ddf4a118faaf642adf40b670b3f42e5e57dc8b09a71562c8@group.calendar.google.com" target="_blank">
-      Add on iPhone's Google Calendar
-    </a>
+    <div class="header">
+      <h1>Jain Tithi Calendar</h1>
+      <p>Subscribe to our calendar for timely notifications on Ashtami &amp; Chaturdashi events.</p>
+    </div>
+    <div class="links">
+      <a class="btn" href="https://calendar.google.com/calendar/u/9?cid=ZWExZjA3MDNjOTQ1OTRkM2RkZjRhMTE4ZmFhZjY0MmFkZjQwYjY3MGIzZjQyZTVlNTdkYzhiMDlhNzE1NjJjOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">
+        Add on Android's Google Calendar
+      </a>
+      <a class="btn" href="webcal://calendar.google.com/calendar/ical/ea1f0703c94594d3ddf4a118faaf642adf40b670b3f42e5e57dc8b09a71562c8@group.calendar.google.com/public/basic.ics">
+        Add on iPhone's Calendar
+      </a>
+      <a class="btn" href="https://calendar.google.com/calendar/u/0/r?cid=ea1f0703c94594d3ddf4a118faaf642adf40b670b3f42e5e57dc8b09a71562c8@group.calendar.google.com" target="_blank">
+        Add on iPhone's Google Calendar
+      </a>
+    </div>
   </div>
 </body>
 </html>
